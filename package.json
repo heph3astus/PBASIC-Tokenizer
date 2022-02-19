@@ -26,7 +26,7 @@
   "devDependencies": {
     "babel": "^5.4.2",
     "expect": "^1.6.0",
-    "gulp": "gulpjs/gulp#4.0",
+    "gulp": "4.0",
     "gunzip-maybe": "^1.1.0",
     "iconv-lite": "^0.4.8",
     "lodash": "^3.8.0",
