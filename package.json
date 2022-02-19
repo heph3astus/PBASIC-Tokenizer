@@ -1,0 +1,43 @@
+{
+  "name": "pbasic-tokenizer",
+  "version": "0.3.0",
+  "description": "BASIC Stamp PBASIC Tokenizer",
+  "author": "Jacob Rosenthal",
+  "contributors": [],
+  "repository": "parallaxinc/PBASIC-Tokenizer",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "main": "index.js",
+  "browser": "browser.js",
+  "files": [
+    "LICENSE",
+    "index.js",
+    "browser.js"
+  ],
+  "scripts": {
+    "prepublish": "npm run emscripten && npm run build",
+    "test": "mocha",
+    "build": "webpack --config webpack.node.js && webpack --config webpack.browser.js",
+    "emscripten": "gulp fetch && ./emscripten.sh"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^5.4.2",
+    "expect": "^1.6.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "gunzip-maybe": "^1.1.0",
+    "iconv-lite": "^0.4.8",
+    "lodash": "^3.8.0",
+    "mocha": "^2.2.1",
+    "request": "^2.55.0",
+    "tar-fs": "^1.5.1",
+    "webpack": "^1.7.3"
+  },
+  "keywords": [
+    "parallax",
+    "pbasic",
+    "tokenizer"
+  ]
+}
